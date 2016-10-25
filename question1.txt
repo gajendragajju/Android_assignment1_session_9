@@ -1,0 +1,27 @@
+1)What is the difference between Internal Storage & External Storage?
+
+answer:-
+Internal storage is seen as an integral part of your computing device. External storage is something you add on.
+That's really the only mandatory distinction. Both get power and are connected to the computer, but those can vary a bit, 
+internal to external.
+An internal drive is, naturally, always powered by the device it's within: your PC, your phone, your tablet. 
+Some external devices contain their own power supplies and plug in independently of the controlling device: most RAID, JBOD, eSATA, 
+and NAS devices do this, either because the data connection doesn't provide power, or because the device needs more power than the 
+interface can provide. Others can be powered by the controlling device. USB hard drives go both ways (computer-powered or 
+self-powered), but memory cards and USB memory sticks are nearly always powered by the controlling device (or a powered hub).
+
+The interface can vary a bit, too. The original parallel SATA was pretty much an in-the-box only interconnect. Back in those days, 
+if you took apart an external USB drive box, you'd probably find a PSATA drive inside, along with a tiny controller board that 
+converted USB protocols to SATA protocols. These days, if you open up an external USB hard drive or SSD, you'll probably find a 
+SATA device inside. And of course, most SSDs and HDDs are still SATA these days, inside the computer.
+
+In short, there's really no difference in the storage device itself... it's just the power, packaging, and maybe an intermediate 
+interface: USB and, more recently, Thunderbolt are fast enough for any drive these days, and they work over much longer cable runs 
+than eSATA. And in the case of USB, it's a standard connection: any old PC, most phones, and most tablets can connect up directly 
+to a USB device.
+
+External storage is outside the computer enclosure. Internal is inside. 
+External storage sometimes needs an additional power source, internal is connected to the computer power supply. 
+External storage can use the same sort of connection (SATA) as internal, but it frequently just uses USB as that is more common. 
+USB can be slower. FireWire and other approaches can be used. 
+External storage sometimes needs a drive controller while internal operates using components on the motherboard. 

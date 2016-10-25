@@ -1,0 +1,34 @@
+3)What are the critical Permissions and Normal Permissions? 
+What are the examples of each?
+
+answer:-NORMAL PERMISSIONS
+
+Many permissions are designated as PROTECTION_NORMAL, which indicates that there's no great risk to the user's privacy or 
+security in letting apps have those permissions. For example, users would reasonably want to know whether an app can read their 
+contact information, so users have to grant this permission explicitly. By contrast, there's no great risk in allowing an app to 
+vibrate the device, so that permission is designated as normal.
+
+If an app declares in its manifest that it needs a normal permission, the system automatically grants the app that permission at 
+install time. The system does not prompt the user to grant normal permissions, and users cannot revoke these permissions.
+
+As of API level 23, the following permissions are classified as PROTECTION_NORMAL:
+
+ACCESS_LOCATION_EXTRA_COMMANDS
+ACCESS_NETWORK_STATE
+ACCESS_NOTIFICATION_POLICY
+ACCESS_WIFI_STATE
+BLUETOOTH
+BLUETOOTH_ADMIN
+BROADCAST_STICKY
+CHANGE_NETWORK_STATE
+CHANGE_WIFI_MULTICAST_STATE
+CHANGE_WIFI_STATE
+DISABLE_KEYGUARD
+EXPAND_STATUS_BAR
+GET_PACKAGE_SIZE
+INSTALL_SHORTCUT
+
+To protect the system's integrity and the user's privacy, Android runs each app in a limited access sandbox. 
+If the app wants to use resources or information outside of its sandbox, the app has to explicitly request permission. 
+Depending on the type of permission the app requests, the system may grant the permission automatically, or the system may
+ ask the user to grant the permission.

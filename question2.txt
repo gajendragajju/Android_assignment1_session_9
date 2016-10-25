@@ -1,0 +1,12 @@
+2)For how long the data resides in the cache?
+answer:-
+It depends much on person, browser and settings.
+Browser usually reserves certain amount of disk space, like 12 MiB, to this task. If user stopped using browser it is indefinitely. 
+If (s)he uses browser rarely it will be until the expiration - either by internal policy or by HTTP headers. 
+If (s)he uses browser heavily it can be 12 minutes or even less.
+I believe that it is hard to say 'in general' as I had a website on which 50% entries were from Firefox and 
+49% from Opera when IE at that point had over 75% of market. If target of your side are users who uses browser heavily it can
+ be very short. On the other hand if your site is only website visited it can be nearly never.
+Depends on how long the server specifies. The server sends back parameters in response header.
+ They can specify max-age (how long to cache the file before it expires in milliseconds) or an 
+expiration date (date that the file will expire). If it has both, max-age will take priority.
